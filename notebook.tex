@@ -288,30 +288,33 @@ Python}\label{introducciuxf3n-a-jupyter-notebooks-con-python}}
 \subsubsection{Ing. José Alfonso Ureña
 Pajón}\label{ing.-josuxe9-alfonso-ureuxf1a-pajuxf3n}}
 
+\hypertarget{egresado-de-la-carrera-de-ingenieruxeda-electruxf3nica-del-tecnoluxf3gico-de-muxe9rida}{%
+\subparagraph{Egresado de la carrera de Ingeniería Electrónica del
+Tecnológico de
+Mérida}\label{egresado-de-la-carrera-de-ingenieruxeda-electruxf3nica-del-tecnoluxf3gico-de-muxe9rida}}
+
+    \hypertarget{instalaciuxf3n}{%
+\section{Instalación}\label{instalaciuxf3n}}
+
+La forma más fácil de instalar la aplicación Jupyter Notebook es
+instalar una distribución científica de Python llamada
+\href{https://www.anaconda.com/download/\#windows}{Anaconda} que sirve
+para analisis de datos y que incluye una versión de Python y todas las
+librerias necesarias. (Se recomienda instalarlo usando la
+configuraciones predeterminadas)
+
     \hypertarget{quuxe9-es-jupyter-notebook}{%
 \section{¿Qué es Jupyter Notebook?}\label{quuxe9-es-jupyter-notebook}}
 
 \textbf{Jupyter Notebook} es un entorno de programación interactivo
 creado por la comunidad que permite la elaboración de documentos
-``notebook'' que pueden incluir:
+``notebook'' que pueden incluir: * Código ejecutable * Widgets
+interactivos * Gráficas * Texto * Ecuaciones * Imágenes * Video
 
-\begin{itemize}
-\tightlist
-\item
-  Código ejecutable
-\item
-  Widgets interactivos
-\item
-  Gráficas
-\item
-  Texto
-\item
-  Ecuaciones
-\item
-  Imágenes
-\item
-  Video
-\end{itemize}
+\textbf{Jupyter Notebook} amplía el uso de la terminal para programación
+interactiva, dandole un giro nuevo, por medio de una aplicación web
+diseñada para capturar todo el proceso de desarrollo de programa:
+desarrollo, documentación, ejecución, así como reporte de resultados.
 
     \hypertarget{componentes}{%
 \section{Componentes}\label{componentes}}
@@ -321,24 +324,24 @@ creado por la comunidad que permite la elaboración de documentos
 \begin{itemize}
 \tightlist
 \item
-  \textbf{La Aplicación Web de Notebook}: una aplicación web interactiva
-  donde se crean los documentos ``notebook''.
+  \textbf{La Aplicación Web de Jupyter Notebook}: una aplicación web
+  interactiva donde se crean los documentos ``notebook''.
 \item
   \textbf{Kernels}: procesos separados iniciados por la aplicación web
   de notebook que ejecuta el código de los usuarios en un lenguaje de
   programación determinado y devuelve la salida a la aplicación web de
   notebook.
 \item
-  \textbf{Documentos Notebook}: archivo con una representación de todo
-  el contenido visible en la aplicación web del notebook, incluidas las
-  entradas y salidas de los cálculos, el texto, las ecuaciones, las
-  imágenes y las representaciones multimedia de objetos. \emph{Cada
-  documento Notebook tiene su propio kernel}.
+  \textbf{Documentos Notebook}: archivo con extensión \emph{ipynb} que
+  es la representación de todo el contenido visible en la aplicación web
+  del notebook, incluidas las entradas y salidas de los cálculos, el
+  texto, las ecuaciones, las imágenes y las representaciones multimedia
+  de objetos. \emph{Cada documento Notebook tiene su propio kernel}.
 \end{itemize}
 
-    \hypertarget{para-que-puede-servir-los-notebooks}{%
-\section{¿Para que puede servir los
-Notebooks?}\label{para-que-puede-servir-los-notebooks}}
+    \hypertarget{para-que-pueden-servir-los-notebooks}{%
+\section{¿Para que pueden servir los
+Notebooks?}\label{para-que-pueden-servir-los-notebooks}}
 
 \begin{itemize}
 \tightlist
@@ -349,21 +352,136 @@ Notebooks?}\label{para-que-puede-servir-los-notebooks}}
 \item
   Presentaciónes
 \item
-  Cursos
+  Cursos de todo tipo (no sólo de programación)
 \item
   Clases
 \item
   Trabajo Científico
 \item
+  Analisis de datos
+\item
   etc\ldots{}
 \end{itemize}
 
-    2 + 3
+    \hypertarget{inicio-del-servidor-de-notebook}{%
+\section{Inicio del Servidor de
+Notebook}\label{inicio-del-servidor-de-notebook}}
+
+Se puede iniciar el ``Servidor de Notebook'' desde la línea de comandos
+con el comando:
+
+\emph{jupyter notebook}
+
+    \hypertarget{panel-de-notebook-dashboard}{%
+\section{Panel de Notebook
+(Dashboard)}\label{panel-de-notebook-dashboard}}
+
+Despues de iniciar el servidor de notebook, el navegador abrirá el Panel
+de Notebook o Dashboard. Este es la página de inicio del Jupyter
+Notebook y su propósito principal es mostrar los notebooks y archivos en
+el directorio actual.
+
+    \hypertarget{nuevo-notebook}{%
+\section{Nuevo Notebook}\label{nuevo-notebook}}
+
+    \hypertarget{apagar-la-aplicaciuxf3n-de-jupyter-notebooks}{%
+\section{Apagar la aplicación de Jupyter
+Notebooks}\label{apagar-la-aplicaciuxf3n-de-jupyter-notebooks}}
+
+Al cerrar el navegador (o la pestaña) no se cerrará la aplicación
+Jupyter Notebook. Para apagarlo completamente necesita cerrar el
+terminal asociado.
+
+Se pueden ejecutar muchas copias de la aplicación Jupyter Notebook y
+aparecerán en una dirección similar. Sin embargo ya que con una sola
+aplicación de Jupyter Notebooks se pueden abrir muchos ``documentos
+notebook'', no se recomienda ejecutar varias copias de la aplicación.
+
+    \hypertarget{cerrar-un-documento-notebook-cerrar-el-kernel-asociado}{%
+\section{Cerrar un Documento Notebook (cerrar el Kernel
+Asociado)}\label{cerrar-un-documento-notebook-cerrar-el-kernel-asociado}}
+
+Cuando se abre un Docuemento Notebook, su ``motor de cómputo'' (llamado
+kernel) se inicia automáticamente. Al cerrar la pestaña del navegador,
+no se apagará el kernel, en su lugar, el kernel seguirá funcionando
+hasta que se apague explícitamente.
+
+    Alternativamente, el ``dashboard'' estan señalados en verde los Notebook
+que estan activos y se pueden cerrar desde ahi.
+
+    \hypertarget{modos}{%
+\section{Modos}\label{modos}}
+
+\hypertarget{modo-de-ediciuxf3n}{%
+\subsubsection{Modo de Edición}\label{modo-de-ediciuxf3n}}
+
+El borde de la celda se encuentra en verde y se puede escribir
+libremente, se entra este modo presionando ``Enter'' o con un clik en el
+área de edición de alguna celda.
+
+\hypertarget{modo-de-comandos}{%
+\subsubsection{Modo de Comandos}\label{modo-de-comandos}}
+
+El borde de la celda se encuentra en azul y permite el ingreso de
+``atajos del teclado'' que permiten manipular las celdas de una manera
+eficiente, se entra este modo presionando ``Esc'' o con un clik fuera
+del área de edición de las celdas.
+
+    Las Ecuaciones se ingresan por medio de el lenguaje \textbf{Latex}:
+
+\(\int_0^\infty x^ {-\alpha}\)
 
     \hypertarget{ejemplos-de-notebooks}{%
 \section{Ejemplos de Notebooks}\label{ejemplos-de-notebooks}}
 
 https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
+
+    \hypertarget{python}{%
+\section{Python}\label{python}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{l+m+mi}{10} \PY{o}{+} \PY{l+m+mi}{25} \PY{o}{/} \PY{l+m+mi}{2}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}1}]:} 22.5
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{x} \PY{o}{=} \PY{l+m+mi}{10}
+        \PY{n}{y} \PY{o}{=} \PY{l+m+mi}{3}
+        \PY{n}{x} \PY{o}{+} \PY{n}{y}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}4}]:} 13
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{l+m+mi}{5}\PY{o}{+} \PY{l+m+mi}{5}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}7}]:} 10
+\end{Verbatim}
+            
+    5+ 5
+
+\hypertarget{section}{%
+\subparagraph{}\label{section}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Hello world!}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Hello world!
+
+    \end{Verbatim}
 
     \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}1}]:} \PY{l+m+mi}{5}\PY{o}{+}\PY{l+m+mi}{5}\PY{o}{/}\PY{l+m+mi}{2}
@@ -378,12 +496,12 @@ https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Noteboo
 {\color{incolor}In [{\color{incolor}1}]:} \PY{k}{def} \PY{n+nf}{sum}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}\PY{p}{:}
             \PY{k}{return} \PY{n}{a} \PY{o}{+} \PY{n}{b}
         
-        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{6}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{l+m+mi}{23}\PY{p}{,}\PY{l+m+mi}{24}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-7
+47
 
     \end{Verbatim}
 
