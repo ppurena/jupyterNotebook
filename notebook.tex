@@ -303,6 +303,43 @@ para analisis de datos y que incluye una versión de Python y todas las
 librerias necesarias. (Se recomienda instalarlo usando la
 configuraciones predeterminadas)
 
+    \hypertarget{contenido-del-taller}{%
+\section{Contenido del taller}\label{contenido-del-taller}}
+
+\hypertarget{descripcion-de-el-uso-de-los-notebooks.}{%
+\subsubsection{1. Descripcion de el uso de los
+notebooks.}\label{descripcion-de-el-uso-de-los-notebooks.}}
+
+\begin{itemize}
+\tightlist
+\item
+  Descripcion y uso de cada una de las partes.
+\item
+  Ejericicios
+\end{itemize}
+
+\hypertarget{introducciuxf3n-a-python.}{%
+\subsubsection{2. Introducción a
+Python.}\label{introducciuxf3n-a-python.}}
+
+\begin{itemize}
+\tightlist
+\item
+  Variables, Sentencias de Control, Listas, Funciones
+\item
+  Ejercicios
+\end{itemize}
+
+\hypertarget{vistazo-a-topicos-avanzados.}{%
+\subsubsection{3. Vistazo a Topicos
+Avanzados.}\label{vistazo-a-topicos-avanzados.}}
+
+\begin{itemize}
+\tightlist
+\item
+  Matplotlib, Numpy, Pandas
+\end{itemize}
+
     \hypertarget{quuxe9-es-jupyter-notebook}{%
 \section{¿Qué es Jupyter Notebook?}\label{quuxe9-es-jupyter-notebook}}
 
@@ -399,7 +436,7 @@ notebook'', no se recomienda ejecutar varias copias de la aplicación.
 
     \hypertarget{cerrar-un-documento-notebook-cerrar-el-kernel-asociado}{%
 \section{Cerrar un Documento Notebook (cerrar el Kernel
-Asociado)}\label{cerrar-un-documento-notebook-cerrar-el-kernel-asociado}}
+asociado)}\label{cerrar-un-documento-notebook-cerrar-el-kernel-asociado}}
 
 Cuando se abre un Docuemento Notebook, su ``motor de cómputo'' (llamado
 kernel) se inicia automáticamente. Al cerrar la pestaña del navegador,
@@ -408,6 +445,9 @@ hasta que se apague explícitamente.
 
     Alternativamente, el ``dashboard'' estan señalados en verde los Notebook
 que estan activos y se pueden cerrar desde ahi.
+
+    \hypertarget{interfaz-de-usuario}{%
+\section{Interfaz de Usuario}\label{interfaz-de-usuario}}
 
     \hypertarget{modos}{%
 \section{Modos}\label{modos}}
@@ -427,9 +467,79 @@ El borde de la celda se encuentra en azul y permite el ingreso de
 eficiente, se entra este modo presionando ``Esc'' o con un clik fuera
 del área de edición de las celdas.
 
-    Las Ecuaciones se ingresan por medio de el lenguaje \textbf{Latex}:
+    \hypertarget{tipos-de-celdas}{%
+\section{Tipos de Celdas}\label{tipos-de-celdas}}
 
-\(\int_0^\infty x^ {-\alpha}\)
+\hypertarget{celdas-de-codigo-code-cells}{%
+\subsubsection{Celdas de Codigo (Code
+cells)}\label{celdas-de-codigo-code-cells}}
+
+Permiten ejecutar editar y ejecutar codigo. El lenguaje depende del
+Kernel que se haya seleccionado, el kernel por defecto es IPython que
+corre codigo en Python. Cuando una celda de codigo se ejecuta, el codigo
+que contiene la celda se manda al Kernel para ser procesado y para luego
+mostrar el resultado como la salida de la celda. \#\#\# Celdas Markdown
+(Markdown cells) Permite documentar el proceso de programación por medio
+de texto ``Markdown'', que permite especificar texto en distintos
+formatos, texto en negrita, cursivas, tablas, ecuaciones, html, imagenes
+etc. \#\#\# Celdas crudas (Raw cells) Permite escribir texto que no sera
+evaluado por el notebook
+
+    Celdas Markdown
+
+\hypertarget{encabezado-1}{%
+\section{Encabezado 1}\label{encabezado-1}}
+
+\hypertarget{encabezado-1.1}{%
+\subsection{Encabezado 1.1}\label{encabezado-1.1}}
+
+Negrita: \textbf{texto} o \textbf{texto}, cursivas: \emph{texto} or
+\emph{texto} * viñeta 1 * viñeta 2 1. numeración 1 2. numeración 2
+
+    Celdas Markdown
+
+\hypertarget{tablas}{%
+\section{Tablas}\label{tablas}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Tiempo (s) & Posición X (cm) & Posicion Y (cm)\tabularnewline
+\midrule
+\endhead
+1 & .45 & .2\tabularnewline
+2 & .52 & .1\tabularnewline
+3 & .71 & 0\tabularnewline
+4 & .78 & -.05\tabularnewline
+5 & .81 & -.07\tabularnewline
+\bottomrule
+\end{longtable}
+
+    Celdas Markdown
+
+\hypertarget{ecuaciones}{%
+\section{Ecuaciones}\label{ecuaciones}}
+
+Las Ecuaciones se ingresan por medio de el lenguaje \(\LaTeX\):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(\int_0^\infty x^ {-\alpha}\)
+\item
+  \(e^{i\pi} + 1 = 0\)
+\item
+  \(e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i\)
+\end{enumerate}
+
+    Celdas Markdown
+
+\hypertarget{hipervinculos-e-imagenes}{%
+\section{Hipervinculos e Imagenes}\label{hipervinculos-e-imagenes}}
+
+hipervinculo: \href{https://www.google.com}{Google}
+
+    \hypertarget{celdas-de-codigo}{%
+\section{Celdas de Codigo}\label{celdas-de-codigo}}
 
     \hypertarget{ejemplos-de-notebooks}{%
 \section{Ejemplos de Notebooks}\label{ejemplos-de-notebooks}}
@@ -439,42 +549,28 @@ https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Noteboo
     \hypertarget{python}{%
 \section{Python}\label{python}}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{l+m+mi}{10} \PY{o}{+} \PY{l+m+mi}{25} \PY{o}{/} \PY{l+m+mi}{2}
-\end{Verbatim}
+    Python es un lenguaje de programación de alto nivel, interpretado creado
+por Guido van Rossum. La filosofía del lenguaje es darle prioridad a la
+legibilidad de código.
 
+Python consta de tipado dinámico y un manejo automático de memoria.
+Soporta multiples paradigmas de programación, ya que soporta orientación
+a objetos, programación imperativa, programación funcional y de
+procedimientos.
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}1}]:} 22.5
-\end{Verbatim}
-            
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{x} \PY{o}{=} \PY{l+m+mi}{10}
-        \PY{n}{y} \PY{o}{=} \PY{l+m+mi}{3}
-        \PY{n}{x} \PY{o}{+} \PY{n}{y}
-\end{Verbatim}
+\emph{Fuente:
+\href{https://en.wikipedia.org/wiki/Python_(programming_language)}{Wikipedia}}
 
+    \hypertarget{variables-en-python}{%
+\section{Variables en Python}\label{variables-en-python}}
 
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}4}]:} 13
-\end{Verbatim}
-            
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}7}]:} \PY{l+m+mi}{5}\PY{o}{+} \PY{l+m+mi}{5}
-\end{Verbatim}
-
-
-\begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}7}]:} 10
-\end{Verbatim}
-            
-    5+ 5
-
-\hypertarget{section}{%
-\subparagraph{}\label{section}}
+Las variable sirven para guardar datos y pueden cambiar su valor en
+cualquier momento:
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}5}]:} \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Hello world!}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}1}]:} \PY{c+c1}{\PYZsh{} Los comentarios en python inician con un signo de numero (\PYZsh{})}
+        \PY{n}{saludo} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Hello world!}\PY{l+s+s1}{\PYZsq{}}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{saludo}\PY{p}{)}
 \end{Verbatim}
 
 
@@ -484,19 +580,353 @@ Hello world!
     \end{Verbatim}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{l+m+mi}{5}\PY{o}{+}\PY{l+m+mi}{5}\PY{o}{/}\PY{l+m+mi}{2}
+{\color{incolor}In [{\color{incolor}2}]:} \PY{c+c1}{\PYZsh{} Los valores de las variables pueden cambiar en cualquier momento}
+        \PY{n}{x} \PY{o}{=} \PY{l+m+mi}{10}
+        \PY{n}{y} \PY{o}{=} \PY{l+m+mi}{3}
+        \PY{n}{y} \PY{o}{=} \PY{n}{x} \PY{o}{+} \PY{n}{y}
+        \PY{n+nb}{print} \PY{p}{(}\PY{n}{y}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+13
+
+    \end{Verbatim}
+
+    Variables en Python (continuación)
+
+\hypertarget{reglas-para-nombrar-variables}{%
+\section{Reglas para nombrar
+variables}\label{reglas-para-nombrar-variables}}
+
+\begin{itemize}
+\tightlist
+\item
+  El nombre de una variable solo puede contener letras, números y
+  guiones bajos y no puden empezar con un número.
+\item
+  No se permiten espacios
+\item
+  No se pueden utilizar palabras clave de
+\end{itemize}
+
+Ejemplos de nombres de variables correctas: temperatura, contador, x,
+sensor\_1
+
+Ejemplos de nombres de variables incorrectas: 12cont, cuarto 3, print,
+def
+
+    Variables en Python (continuación)
+
+\begin{itemize}
+\tightlist
+\item
+  Las variables enteras son variables numericas que \textbf{no
+  contienen} un punto decimal.
+\item
+  Las variables de punto flotante son variables numericas que
+  \textbf{contienen} un punto decimal.
+\item
+  Las variables de cadena de caracteres se encuentran entre comillas
+  sencillas (') o comillas dobles (")
+\end{itemize}
+
+    \hypertarget{operaciones-aritmeticas}{%
+\section{Operaciones aritmeticas}\label{operaciones-aritmeticas}}
+
+las operaciones de suma, resta, multiplicacion, división, exponentes y
+resto en division entera se representan por medio de los simbolos +, -,
+*, /, **, \% respectivamente.
+
+    \hypertarget{sentencias-de-control-condicionales}{%
+\section{Sentencias de control
+condicionales}\label{sentencias-de-control-condicionales}}
+
+La sentencia if prueba una condición y luego responde a esa condición.
+Si la condición es verdadera todas las sentencias del siguiente bloque
+se ejecutarán. En caso contrario y en caso de haber sido incluida la
+sentencia ``else'', el bloque de instrucciones inmediatamente despues se
+ejecutarían.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{nombre1} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Alfonso}\PY{l+s+s1}{\PYZsq{}}
+        \PY{n}{nombre2} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{alfonso}\PY{l+s+s1}{\PYZsq{}}
+        
+        \PY{k}{if} \PY{n}{nombre1}\PY{o}{.}\PY{n}{lower}\PY{p}{(}\PY{p}{)} \PY{o}{==} \PY{n}{nombre2}\PY{o}{.}\PY{n}{lower}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+            \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Comparten el mismo nombre!}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k}{else}\PY{p}{:}
+            \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Las personas tienen distinto nombre}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Comparten el mismo nombre!
+
+    \end{Verbatim}
+
+    Para verificar igualdad ``=='', inigualdad ``!='', mayor que
+``\textgreater{}'', menor que ``\textgreater{}'', moyor o igual
+``\textgreater{}='', menor o igual ``\textless{}='' y para verificar si
+algun elemento forma parte de una lista ``in''.
+
+    \hypertarget{sentencias-de-control-de-bucle}{%
+\section{Sentencias de control de
+bucle}\label{sentencias-de-control-de-bucle}}
+
+\hypertarget{bucle-for}{%
+\subsubsection{Bucle For}\label{bucle-for}}
+
+Los bucles for son usados para iterar en los elementos de una secuencia.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{k}{for} \PY{n}{x} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}\PY{p}{:}
+            \PY{n+nb}{print} \PY{p}{(}\PY{n}{x}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{c+c1}{\PYZsh{} La estructura de datos de este ejemplo es una lista literal}
+        \PY{k}{for} \PY{n}{nombre} \PY{o+ow}{in} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Luis}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pedro}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Margarita}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Alfonso}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{:}
+            \PY{n+nb}{print} \PY{p}{(}\PY{n}{nombre}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Luis
+Pedro
+Margarita
+Alfonso
+
+    \end{Verbatim}
+
+    Sentencias de control de bucle (continuación)
+
+\hypertarget{bucle-while}{%
+\subsubsection{Bucle While}\label{bucle-while}}
+
+Los bucles While verifican una condición y en caso de ser verdadera
+ejecutan el bloque de codigo subsecuente, este se mantiene en ejecucion
+mientras la condición pemanezca verdadera:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{temperatura} \PY{o}{=} \PY{l+m+mi}{25}
+        \PY{k}{while} \PY{n}{temperatura} \PY{o}{\PYZlt{}} \PY{l+m+mi}{32}\PY{p}{:}
+            \PY{n+nb}{print} \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Temperatura =}\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{temperatura}\PY{p}{)} \PY{o}{+} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ el clima es agradable}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{n}{temperatura}  \PY{o}{=} \PY{n}{temperatura} \PY{o}{+} \PY{l+m+mi}{1}
+        
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Ahora el clima es caluroso!!!}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Temperatura =25 el clima es agradable
+Temperatura =26 el clima es agradable
+Temperatura =27 el clima es agradable
+Temperatura =28 el clima es agradable
+Temperatura =29 el clima es agradable
+Temperatura =30 el clima es agradable
+Temperatura =31 el clima es agradable
+Ahora el clima es caluroso!!!
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{password} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}
+        \PY{k}{while} \PY{n}{password} \PY{o}{!=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{****}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}
+            \PY{n}{password} \PY{o}{=} \PY{n+nb}{input}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Favor de ingresar el password}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{password correcto, bienvenido!}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}    
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Favor de ingresar el passwordhola
+Favor de ingresar el passwordtest
+Favor de ingresar el password****
+password correcto, bienvenido!
+
+    \end{Verbatim}
+
+    \hypertarget{listas}{%
+\section{Listas}\label{listas}}
+
+Una lista es una colección de elementos, que se almacena en una
+variable.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{misMascotas} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pinky}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{mariposa}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tohui}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sheldon}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{misMascotas}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{+} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{,}\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n}{misMascotas}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+pinky,tohui
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{c+c1}{\PYZsh{} Para obtener el ultimo miebro de la lista se puede utilizar indices negativos:}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{misMascotas}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]} \PY{o}{+} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{,}\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n}{misMascotas}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{4}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+sheldon,pinky
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{c+c1}{\PYZsh{} Para saber el indice de un elemento en la lista se usa la funcion index()}
+         \PY{n}{misMascotas}\PY{o}{.}\PY{n}{index}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tohui}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 \end{Verbatim}
 
 
 \begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}1}]:} 7.5
+{\color{outcolor}Out[{\color{outcolor}10}]:} 2
 \end{Verbatim}
             
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{k}{def} \PY{n+nf}{sum}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}\PY{p}{:}
-            \PY{k}{return} \PY{n}{a} \PY{o}{+} \PY{n}{b}
-        
-        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{l+m+mi}{23}\PY{p}{,}\PY{l+m+mi}{24}\PY{p}{)}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}11}]:} \PY{c+c1}{\PYZsh{} Para saber si una lista contiene un elemento se utiliza la palabra clave \PYZdq{}in\PYZdq{}}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{firulais}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{in} \PY{n}{misMascotas}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+False
+
+    \end{Verbatim}
+
+    Listas (continuación)
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{c+c1}{\PYZsh{} Agregar elementos al final de una lista}
+         \PY{c+c1}{\PYZsh{} lista original: misMascotas = [\PYZsq{}pinky\PYZsq{}, \PYZsq{}mariposa\PYZsq{}, \PYZsq{}tohui\PYZsq{}, \PYZsq{}sheldon\PYZsq{}]}
+         \PY{n}{misMascotas}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{capitan}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{misMascotas}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+['pinky', 'mariposa', 'tohui', 'sheldon', 'capitan']
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{c+c1}{\PYZsh{} Agregar elementos en un indice determinado de una lista}
+         \PY{n}{misMascotas}\PY{o}{.}\PY{n}{insert}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bruno}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{misMascotas}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+['pinky', 'bruno', 'mariposa', 'tohui', 'sheldon', 'capitan']
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}14}]:} \PY{c+c1}{\PYZsh{} Para ordenar alfabeticamente una lista}
+         \PY{n}{misMascotas}\PY{o}{.}\PY{n}{sort}\PY{p}{(}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{misMascotas}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+['bruno', 'capitan', 'mariposa', 'pinky', 'sheldon', 'tohui']
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}15}]:} \PY{c+c1}{\PYZsh{} Para saber el número de elementos en una lista}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{misMascotas}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+6
+
+    \end{Verbatim}
+
+    Listas (continuación)
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}16}]:} \PY{c+c1}{\PYZsh{} Eliminar elementos de una lista en un indice determinado}
+         \PY{c+c1}{\PYZsh{} Contenido Actual de misMascotas = [\PYZsq{}bruno\PYZsq{}, \PYZsq{}capitan\PYZsq{}, \PYZsq{}mariposa\PYZsq{}, \PYZsq{}pinky\PYZsq{}, \PYZsq{}sheldon\PYZsq{}, \PYZsq{}tohui\PYZsq{}]}
+         \PY{k}{del} \PY{n}{misMascotas}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{misMascotas}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+['capitan', 'mariposa', 'pinky', 'sheldon', 'tohui']
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}17}]:} \PY{c+c1}{\PYZsh{} Eliminar elementos de una lista por valor}
+         \PY{n}{misMascotas}\PY{o}{.}\PY{n}{remove}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{mariposa}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{misMascotas}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+['capitan', 'pinky', 'sheldon', 'tohui']
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}18}]:} \PY{c+c1}{\PYZsh{} Para obtener el ultimo elemento de una lista y eliminarlo al mimso tiempo}
+         \PY{n}{mascota} \PY{o}{=} \PY{n}{misMascotas}\PY{o}{.}\PY{n}{pop}\PY{p}{(}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{misMascotas}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{mascota}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+['capitan', 'pinky', 'sheldon']
+tohui
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}19}]:} \PY{c+c1}{\PYZsh{} Para obtener cualquier elemento de una lista y eliminarlo al mimso tiempo}
+         \PY{n}{mascota} \PY{o}{=} \PY{n}{misMascotas}\PY{o}{.}\PY{n}{pop}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{misMascotas}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{mascota}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+['pinky', 'sheldon']
+capitan
+
+    \end{Verbatim}
+
+    \hypertarget{funciones}{%
+\section{Funciones}\label{funciones}}
+
+Una función es un bloque de código que es ejecutado cuando se hace una
+llamada a la función. La función puede recibir valores llamados
+parametros y tambien puede regresar datos como resultado
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}20}]:} \PY{k}{def} \PY{n+nf}{sum}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}\PY{p}{:}
+             \PY{k}{return} \PY{n}{a} \PY{o}{+} \PY{n}{b}
+         
+         \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{l+m+mi}{23}\PY{p}{,}\PY{l+m+mi}{24}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
@@ -504,6 +934,30 @@ Hello world!
 47
 
     \end{Verbatim}
+
+    \hypertarget{vistazo-a-tuxf3picos-avanzados}{%
+\section{Vistazo a Tópicos
+Avanzados}\label{vistazo-a-tuxf3picos-avanzados}}
+
+ 
+
+    Algunas de las librerias y paqueterias que conforman la pila científica
+básica de Python son:
+
+\begin{itemize}
+\tightlist
+\item
+  NumPy para manipulación básica de matrices
+\item
+  SciPy, computación científica en Python, incluyendo procesamiento y
+  optimización de señales
+\item
+  Matplotlib visualización y graficación.
+\item
+  Pandas para manipulación de datos
+\item
+  Scikit-learn, aprendizaje de maquina (machine learning)
+\end{itemize}
 
 
     % Add a bibliography block to the postdoc
