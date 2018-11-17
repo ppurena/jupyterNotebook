@@ -1,0 +1,13 @@
+# Aceleración
+*"Es el cambio de velocidad que experimenta el movimiento de un cuerpo"*.
+
+Su fórmula se representa como:
+
+$$a = \frac{\Delta V}{\Delta t}$$
+
+donde:
+
+* $a$ es la aceleración.
+* $\Delta V$ es el cambio de velocidad. 
+* $\Delta t$ es el tiempo trascurrido.
+
